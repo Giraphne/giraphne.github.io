@@ -3,7 +3,7 @@ email:              daphne@altmails.com
 description:        Database Interaction and Education Research
 author:             Daphne Miedema
 #baseurl:            "/page"
-#url:                "/"
+#url:                http://giraphne.github.io
 theme:              jekyll-theme-clean-blog
 
 # Social Profiles
