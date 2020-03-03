@@ -23,26 +23,6 @@ h6 {
   @include sans-serif-font;
 }
 
-
-
-a {
-  color: rgb(52, 144, 249);
-  @include transition-all;
-  &:focus,
-  &:hover {
-    color: $primary;
-  }
-}
-
-.circles>ul>li>a {
-  color: $gray-900;
-  @include transition-all;
-  &:focus,
-  &:hover {
-    color: $primary;
-  }
-}
-
 blockquote {
   font-style: italic;
   color: $gray-600;
