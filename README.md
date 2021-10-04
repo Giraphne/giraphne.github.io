@@ -4,8 +4,8 @@ This repository contains a personal website for Daphne Miedema, containing detai
 
 Website powered by Jekyll
 
-Blog theme: [Clean Blog Jekyll](https://startbootstrap.com/template-overviews/clean-blog-jekyll/) by [Start Bootstrap](http://startbootstrap.com/)
+Blog theme: [Clean Blog Jekyll](https://startbootstrap.com/theme/clean-blog-jekyll) by [Start Bootstrap](http://startbootstrap.com/)
 
 ## Copyright and License
 
-Copyright Daphne Miedema 2020 Some Rights Reserved
+Copyright Daphne Miedema 2021 Some Rights Reserved
