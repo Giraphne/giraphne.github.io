@@ -1,0 +1,90 @@
+---
+layout: post
+title: "VL/HCC 2021"
+subtitle: "Trip report"
+date: 2021-10-12 12:09:50 +0100
+background: '/assets/img/2021/vlhcc2021.jpeg'
+---
+
+<h2></h2>
+
+<p>My second first-author paper was accepted to VL/HCC 2021, so it was time for another virtual conference. VL/HCC is the conference on Visual Languages and Human-Centered Computing</p>
+
+<h2>Research Highlights</h2>
+<p> The two most important things in a conference, to me, are networking and discussing research. I saw a lot of interesting research communication again during VL/HCC, and I want to share some of the highlights. </p>
+
+<h4>Opening keynote by Dr. Denae Ford Robinson - The next generation of software engineers.</h4>
+<p>The main question that Denae answered in her keynote, was <i>How to empower a new generation of software engineers?</i> She (and her team) considered three separate aspects for empowerment:</p>
+<ul>
+	<li><b>Social transparency.</b> 
+		One way in which software engineers can provide this is though blogs and vlogs, as they can dismantle stereotypes. Motivation for these content creators included demystifying software engineering, creating a community, showing diversity, increasing awareness, and growing professionally. With regards to content, creators talked about learning, creativity, dealing with stress, remote work, career paths, but also lifestyle type blogs/vlogs. <br>
+		Through such vlogs, interested people can learn more about what it means to be a software engineer: what the work is, what careers look like, who can do it (everyone!), and that software engineers have a life and hobbies besides computers too.<br>
+		For all the virtual events during the past years, (conference) presenters have been making a lot of presentations. I really enjoyed the video-creation and thought of setting up a youtube account for science communication, but it just seems like it would be too much work on top of the PhD...
+	</li>
+
+	<li><b>Societal impact.</b>
+		The most accessible data on societal impact of software engineering can be had through GitHub. Open Source Software (OSS) projects can be tracked and measured. To facilitate new software engineers, OSS projects could receive badges for friendliness. Some positive characteristics are quick replies to questions and making it easy for newcomers to get started. 
+	</li>
+	
+	<li><b>Hybrid work.</b>
+		Throughout the pandemic, almost all countries have had shelter-in-place measures. As a result of this, hybrid work and working from home has become common for almost all software engineers. This acceleration of adoption of hybrid work is advantageous for many non-traditional software engineers, such as those who have care-giving responsibilities at home. Another advantage is that hybrid work comes with many communication channels, plus there typically are communication standards, which can help novices to fit in. 
+	</li>
+</ul>
+
+<p>Denae wrapped up by questioning whether we should move from <i>How to empower a new generation of software engineers?</i> to asking ourselves <i>What are we doing NOW that prepares us for the next generation of developers of tomorrow?</i> One interesting point she brought up in the keynote is the question of how traditional developers (will) reflect on a new generation of developers working with AI code generators such as GitHub Copilot. Does this still make them programmers? Personally, I think that the more steps a developer can skip, the more energy they can put into solving important problems. But solving not-so-important problems is fine too :).</p>
+
+
+
+<h4>Paper session 3: Teaching about Machine Learning and AI</h4>
+<p>In this <a target="_blank" href="https://bit.ly/teaching_ai">session</a> on Wednesday, I learned about various ways in which teachers have students interact with AIs. The approach I found most interesting was that in the paper <i>Exploring Machine Teaching with Children</i>. In this study, children used a picture-taking tool to train a machine learning model on images. The children could generate their own training set of pictures, and then the model could be tested on new pictures. All the pictures in the paper look really fun.</p>
+
+<p>A good audience question in this session was: <i>Is teaching AI (and ML) part of teaching computational skills, or a separate skill?</i> I personally think AI and ML are separate skills from computing. We teach computing to allow our students to create things. AI/ML is more meta than that. Instead of making something directly, the student teaches a machine to create something, whether that is a decision, a conversation, a classification, or something else.</p>
+
+<h4>Paper session 5: Visual Program and Information Representations (1)</h4>
+<p>This <a href="https://bit.ly/visual_reps">session</a> contained our own work on SQLVis. We received three interesting questions from the audience, one of which pointed towards the -to us- previously unknown research area of block-based query languages. One pointer for future work was on the long-term effects of using SQLVis (do users keep their advantage, or does it diminish), another was to compare all possible meaningful visualizations and figuring out which one would be most advantageous for the students to use. All in all, these three questions/pointers gave us a lot of new ideas!</p>
+
+<p>Another interesting paper in this session was on the effect of movement in VR on learning efficiency of sorting algorithms. The authors found that walking through a VR environment leads to more efficient learning than standing still and moving the environment through hand control. This effect on learning might arise because free roaming leads to better immersion and a feeling of presence. It's very surprising to me though, that this leads to better performance for learning sorting algorithms, as algorithms are not 'physical'.</p>
+
+<h4>VL/HCC awards</h4>
+<p>On Tuesday evening, awards for the best (short) papers were handed out. Furthermore, there was an award for most influential paper, which went to the <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/5635185">2010 paper by Todd Kulesza et al.</a> on explanatory debugging of a chatbot. This paper talked about explainable AI (but in different terminology) before it was 'a thing'. The interesting part to me was that explanatory debugging allows the debuggers to update their mental model of the underlying logic. The concept of Explanatory Debugging seems like a promising way to refute misconceptions. </p>
+
+<h4>Paper session 7: Improving Programming Education</h4>
+<p>This research area is close to my personal interests of SQL education, and the <a href="https://bit.ly/improving_programming_education">session</a> had many works of interest.</p>
+
+<p>The first talk in this session was on Hedy, a programming language for gradual learning. Marleen and Felienne had run a first user test and evaluated the language. One benefit of gradual learning according to the students was the introduction of challenges: at first it was easy, but then it became more difficult. I think this might be a reflection of flow. A challenge in Hedy, according to the students, was the change of rules. Changing the rules between levels can be disruptive. But Felienne elaborated that they are working on making the language accept concepts of previous levels too, while motivating the students to use the newly learned concepts. Finally, the students found error messages difficult, a finding well-established in literature... The Hedy team has been working on more natural error messages. So all in all, a good update and a source for future work. </p> 
+
+<p>Another interesting tool introduced in this session was TextCode. TextCode supports novices in learning to program, by supporting the step of translation from natural language to code. This facilitates reflection on the problem, and the decomposition of it. I find problem decomposition an interesting direction of research. Within our team, we have discussed decomposition for SQL a few times too. Some pointers on how students go about problem solving in SQL have been uncovered in our <a href="https://dl.acm.org/doi/10.1145/3446871.3469759">SQL Misconceptions paper</a>. But the main issue with decomposition in SQL is that (as a declarative language) execution is not traceable. This is a problem I'd like to consider in more depth in the future.</p>
+
+
+<h4>Closing keynote by Dr. Mark Guzdial - Changing Computing to make it "For All"</h4>
+<p>The conference was closed with a keynote by Mark Guzdial. Learning computing, and specifically programming, changes how we understand the world. However, most students, at least in the U.S., never take a computer science class. That's very unfortunate, because computing is so much more than software development. Some areas Mark mentioned are Computing for Discovery, Expression and Justice. </p>
+
+<p>So, if most students never take CS, we need to take the CS to them. With the development of teaspoon languages, Mark and colleagues work on integration of computing into different fields such as physics or history. Programming is just a tool; a tool for learning powerful ideas.  </p>
+
+
+<p>Further up in this blogpost, I already mentioned the question <i>Is AI part of computational skills?</i> Mark also touched upon this after an audience question. His main point is that to make CS4All, we need to check what tools teachers could use. How can we add value to their teaching with teaspoon languages? And this is the same question we need to ask for AI. How can AI add value to teaching? If it can, by all means teach it.</p>
+
+<p>Another interesting question was whether this type of computational education does not make computing too easy. Is there a baseline where we should stop? If there is, Mark has not yet found it. He mentioned trying to work with history teachers, as they are supposed to work with technology. But some of these teachers are even scared to work with spreadsheets. So clearly, even spreadsheets are not too easy. Furthermore, maybe making it easy is good, as it lowers the barriers to entrance. Once someone is 'in', they can learn more difficult things if they want.</p>
+
+<p>A final point I want to refer back to is that of the opening keynote, where Denae wondered if Copilot would make us judge software engineers. I think the 'problem' with Copilot is that it might make CS 'too easy', and thus developers may feel devalued. But if tools like Copilot can help us skip the basic stuff, this will leave us more time to work on actual content, challenges and accessibility.</p>
+
+
+<h2>What could have been better</h2>
+<p>One of the main problems with online conference organization is chosing times for the conference that would work for everyone. For us Dutchies, the conference ran from 8PM to midnight. It could have been worse, honestly, but it could also have been better.</p>
+
+<p>Regarding the organisation, many things happened later than I expected. Listing the accepted papers, the conference program, and the conference 'venue', as well as publishing the proceedings, were done relatively late in my opinion. Nevertheless, the conference itself (at least the parts I attended) went off without a hitch.</p>
+
+<p>Finally, the conference organizers decided to host VL/HCC on Zoom. I believe that Zoom is not optimal for facilitating discussions, and that better online conference platforms have been developed in the past 1.5 year. The choice for Zoom took away some opportunities for communication, especially for welcoming newcomers to the community.</p>
+
+<h2>Positive experiences</h2>
+<p>I did have a good experience with the VL/HCC community. For all presentations that I attended, all papers received questions. So, hopefully, all presenters were satisfied. Furthermore, attendence seemed relatively constant with approximately 35 people online on Zoom at all times.</p>
+
+<p>Although the conference was on Zoom, the organisers introduced a Slack workspace for asynchronous communication. It included a channel for each paper session and keynote, and of course options to communicate with all other attendees 1-on-1. The most helpful use of Slack was our session chair Stefan copied all paper questions (sorted by paper!) into the session channel, such that we had an archive of our questions. </p>
+
+<p>Overall, I want to thank the organizers for the successful organization of VL/HCC 2021, hopefull next year it can be held in hybrid format!</p>
+
+
+
+
+
+
