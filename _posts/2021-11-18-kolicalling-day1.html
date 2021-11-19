@@ -1,0 +1,112 @@
+---
+layout: post
+title: "Koli Calling 2021"
+subtitle: "Day 1 - Thursday November 18"
+date: 2021-11-18 20:39:50 +0100
+background: '/assets/img/2021/kolicalling/background.jpeg'
+---
+
+<h2></h2>
+
+<p>November 18. Another new conference was on the schedule for me: Koli Calling. Unfortunately, this conference had to be held online. From Fenia, I had heard about this relatively small, single-track conference. It would be a good target for networking. We'll have to see whether this still holds during the three online conference days. </p>
+
+<p>So, Koli Calling is single track. As we're one timezone away from Finland, where Koli Calling is held in offline versions, I was in luck regarding the timeslots. But, as they have attendees from all sides of the globe, they also took into account US and AUS timezones. As a result, each submission was presented twice. This means that the schedule I present below was the order I chose, and does not necessarily match with other attendees. </p>
+
+<h2>Morning</h2>
+<p>I started my morning with a poster session. The most interesting poster/abstract in this session to me was a <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3489969">work on teaching debugging</a> by Olli Kiljunen. In his research, he will work on adding debugging instructions to IDE's, to teach students to fix their code errors. As error messages are not always descriptive, he proposed to take the student by the hand in a step-by-step process. We discussed some of the things he might take into account when designing the front-end. </p>
+
+<p>The first paper talk I attended was in a session on Computational Thinking. The paper was about identifying <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3490024">Three + 1 perspectives on Computational Thinking</a>. The authors had first conducted a literature review to find papers that mention CT, and to explore their definitions. Then, they discussed their findings with 8 senior researchers in the area. Their first step was to decide on five aspects of CT: 
+Algorithm, Abstraction, Modeling, Simulation and Implementation. <br>
+
+With these five aspects, they determined there were three perspectives from which CT was approached. 
+<ul>
+	<li>Reasoning. This involves applying concepts to solve general problems. Computational Thinking is training the mind. </li>
+	<li>Simplification. The core is to reduce the complexity of a problem. Although it is related to Reasoning, Simplification is a goal in itself.</li>
+	<li>Automation. This involves all five aspects identified above, and enables individuals with the capabilities of technology.</li>
+</ul> 
+Then, the 3 + 1 comes from Empowerment. Reasoning, Simplification and Automation together, are deemed Empowerment by the authors. I found it interesting to see that they color-coded these four, such that you can do some soul-searching and decide which perspective you subscribe to (and give yourself a color). I personally have not considered this yet, I probably should read the paper. Perhaps it will be useful for my University Teaching Qualification portfolio...</p>
+
+<p>Then, the paper watching was interrupted by teaching duties.</p>  
+
+<h2>Afternoon/Evening</h2>
+<p>A couple of hours later, the program was restarted with session C, Help Seeking and Situated Learning.</p>
+
+<p>The first paper in this session was called <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3488072">Reading between the Lines: Student Help-Seeking for Unspecified Behaviors</a> by Jack Wrenn and Shriram Krishnamurthi. In their programming course, they applied an automated TA (Examplar) that helped with evaluating test cases. They were wondering what types of questions students had when they also had this feedback. <br>
+They found that students still had input-output questions, even though Examplar should capture answers to such questions. They found that these questions were about cases with unspecified inputs and underspecified outputs, which unearthed misconceptions about property-based testing. <br>
+In the question session, Shriram mentions that this might a transfer problem, as when the students are nudged in the correct direction, they do apply property-based testing. On Discord, Otto posed the hypothesis that teaching property-based testing before unit testing, might solve part of the problem. I personally don't know anything about property-based testing, but I found the method and discussion very interesting from an educational perspective. 
+</p>
+
+<p>The second paper was on <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3488047">Open Source Software (OSS) practices in CS2</a>. How can you apply OSS in CS2 to maximize benefits and minimize cost? The authors came up with four frameworks, derived from upper-level courses where OSS is already integrated. 
+	<ol>
+		<li>Direct contributions. It provides good collaboration practice, but it can be difficult to find suitable OSS tasks. Plus, OSS pull requests is a slow process. This takes a lot of effort, and should thus only be used in small classes, with students who have experience in Software Development.</li>
+		<li>Plugins. Build creative plug-ins on top of OSS, and interacting with its documentation. Again, the problem is that it is difficult to find suitable OSS projects. </li>
+		<li>Simulated communities. Instructors choose their own topic and format, can be teams or individuals. Still gain review and contribute practice, but no real OSS or external contributors.</li>
+		<li>Code snippets. Focus on CS concepts, no real emphasis on OSS. It also might be difficult to extract relevant code from OSS. </li>
+	</ol>
+These approaches rank from closest to OSS to furthest away. The authors are aiming to implement all four setups in different courses in order to evaluate them. <br>
+One issue is that the students learn to program in a single language, so the teacher can only select projects in this language. This could be a major hindrance to the interpretation of this plan.<br>
+I personally don't think this approach would work for databases/query languages, although I have had students complaining that many of the query formulation problems they have to solve are too staged/uninteresting. Perhaps we should consider using real-world data more. The balancing act is in making the problems easy enough for the students to grasp both question and solution, making it difficult enough that it challenges them, and making it interesting enough to keep them engaged...
+</p>
+
+<p>Then, there was another break with two posters. The first was on <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3489968">Parsons problems for Regex</a>, which sounded interesting but not really relevant for me. The second was on <a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3489970">an autograder for SQL</a>. As I had to step away from the computer, I posted a question in the poster's channel for asynchronous communication. This led to a nice chat during the next paper session.</p>
+
+<p>The last paper session of the day was on student perspectives, and included three papers: student perspectives on event listeners, educator perspectives on the Main method, and student thoughts on buttons. The first and third papers had similar setups, but I'll discuss them in the order of the session nonetheless. The papers were of interest to me as they discussed conceptions on different topics, which gave me ideas for future research.</p>
+
+<p><a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3488051">Paper 1: Student perspectives on event listeners.</a> The research question was: How do students understand Event Driven Programming concepts? Students took a questionnaire, where they could describe their interpretations either in text or submit concept maps. The authors found that there was some confusion about event handlers and listeners regarding the relationships between the event and the subprogram. Regarding the runtime behavior, most student had misconceptions regarding where the event listener 'lives'. The most apparent confusions were:
+<ol>
+	<li>There are two 'things': event listener and event handler.</li>
+	<li>Inappropriate registration of event listeners.</li>
+	<li>Ambiguity in student terminology.</li>
+</ol> 
+The authors had some advice for teachers: First, only use 1 term for each aspect. The word listener might imply an active role. Be hesitant in using external sources for material because of terminology. <br>
+This consideration of terminology is a good one for all teachers, I think. As a teacher, we might know that two (or more) things mean the same, and we might falsely assume the student knows this too.
+</p>
+
+<p><a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3488068">Paper 2: An educator's perspective on the main method.</a> From an educational standpoint, can you learn to write code without learning to read code? Students would like that, but they probably can't. As with almost all professions, you need an apprenticeship before you go out alone. So in the classroom, do we expect students to learn to read from the slide? Simon showed us both a novice and expert's gaze over the same piece of code. The novice read top to bottom, the expert went instantly to main and read it carefully. This is most likely the more efficient reading behavior. <br>
+The authors' recommendations for programming teachers are to not rely on the student to pick up what they need to learn, but to give explicit guidance. Teach them that program code is not (necessarily) linear. Above all, following the order of execution is more useful for understanding the code than following the order the text appears in. <br>
+This made me reflect on our expectations in the introductory database course. Today, we taught proofs using Armstrongs rules, and a student asked me whether there was a guide they could follow. And no, there is not. They should have learnt how to write proofs, this is a prerequisite for the course. But perhaps, they should read more, before they write...
+</p>
+
+<p><a target="_blank" href="https://dl.acm.org/doi/10.1145/3488042.3490170">Paper 3: Students' thoughts about buttons.</a> This study had a similar setup to paper 1, with a course survey asking about the students' perspectives on an aspect of teaching. The paper had four research questions. First, they asked the students what a button was. The authors received descriptions of three categories: vague (it, thing), interaction (functionality, user interface), appearance (area, visual). <br>
+The second question was what happens when pressing start on a touch-screen in a mall. Now, this is impossible to know, but most likely, something will begin or start. The authors received replies of varying decrees of concreteness, up to participants suggesting what the screen might be for. On misconception they found was that the computer wakes up. <br>
+The third question was about an ambiguous case: what happens when you press a save button in an online form? Most likely, the form is either saved or submitted. Again, the participants speculated about what might follow from pressing the button, including the user having an account, or the sending of a confirmation email.<br>
+Finally, the authors had a question that included a code snippet, and asked what would happen when this button was clicked. Interestingly, some students interpreted the next actions purely from the text on the button, instead of from the code. In the descriptions, the code was hardly mentioned. <br>
+The authors concluded with two important findings: 1. The button is an actor (it can be broken, it fulfills a functionality) 2. Interpretation is affected by context, such as our own experiences, its location and labels.
+</p>
+
+<h2>Keynote</h2>
+<p>The day ended (late) with a Keynote by Sue Sentance. The title of her talk was: Teaching computing in school: Is research reaching classroom practice? She started with a 30-second version of the talk, which was very helpful. </p>
+
+<p>She started by asking: What is the goal of CSEd research?<br>
+CSEd research is a broad field, in which Sue sees four areas: pedagogy and assessment, curriculum and theory, society and ethics, tools and resources. <br>
+It is a young field, but we are receiving money for research. Then, is this research reaching the classroom? It seems that in general, the answer is no. First of all, priorities between what researchers are researching, and what teachers need, are not aligned. And, even if the research is aligned, the type of knowledge is not aligned: propositional versus procedural, and generalized versus context-specific. Finally, even if they access research, teachers need to interpret it and embed it in practice.</p>
+
+
+<p>To change this, we need to focus on the next question: What is the value of research in education? Sue approached this from four perspectives: researcher, teacher, school, and policy maker. 
+	<ul>
+		<li>The researcher often is intrinsically motivated, they research the things they find interesting. The extrinsic motivation comes from prestige: h-index, paper count, venue ranks... But the value to others is not necessarily large yet, as we are more often working small-scale than large-scale. This is due to the emerging character of the field.</li>
+		<li>The teacher can have varying degrees of connection with research. They may be research aware (looking for ideas), research literate (developing/judging knowledge), or research active (answering new questions). Teachers do feel (intrinsic) benefit from using research in education.</li>
+		<li>The policy maker judges research from a factual perspective. They need numbers and charts to make decisions.</li>
+	</ul>
+It seems that the main problem lies with the policy maker, because they decide -to some extent- what the researchers and teachers/schools do. For the other categories, it is mostly an issue of lack of time or access.
+</p>
+
+<p>If there is enough time, and researchers and teachers are in touch, there are various types of activities that can be undertaken. As researchers, we can work together with teachers to bring research to the classroom, or we can use school data for research. However, the most accessible and common activity is to produce your research content in various formats, including the development of lessons.
+</p>
+
+<p>Ways in which research can be adapted include transfer, translate and transform. Transfer means to directly adopt. Translate means to take the materials and apply them to a different context. To transform materials, you take the basic concepts and make it your own. <br>
+A good reflective question by Sue was, have you have adapted another researchers work in your teaching? I personally have not, which may be explained by my limited teaching experience (and the fact that I'm never responsible lecturer). But, I also don't know of any materials that I might like to transfer or translate into our education. This was a good reminder to me to keep my eyes open.
+</p>
+
+<p>After the keynote, there were some good discussions about funding, career focus, and the accessibility of higher education versus K-12.
+The fact that I do research on the topic that I also teach is convenient: I can test my hypotheses with my own students. But we should be careful that we disseminate our work beyond our own student population, and to not work in a bubble. I hope the work I present on Friday will help us do exactly that.
+</p>
+
+
+
+
+
+
+
+
+
