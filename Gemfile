@@ -29,4 +29,4 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem "webrick"
-gem "bundler", "~> 2.2.22"
+gem "bundler", "~> 2.2.33"
