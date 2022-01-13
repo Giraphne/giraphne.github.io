@@ -284,6 +284,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  bundler
   github-pages
   jekyll-feed (~> 0.12)
   jekyll-theme-clean-blog
