@@ -4,7 +4,7 @@ description:        Database Interaction and Education Research
 author:             Daphne Miedema
 #baseurl:            "/page"
 #url:                http://giraphne.github.io
-theme:              jekyll-theme-clean-blog
+remote_theme:       StartBootstrap/startbootstrap-clean-blog-jekyll
 
 # Social Profiles
 github_username:    Giraphne
