@@ -1,19 +1,19 @@
 ---
 layout: blog_page
 title: Blog
-subtitle: VirtualEvent posts
+subtitle: virtualevent posts
 background: '/img/bg-journal.jpg'
 
 ---
 
-{% assign numPosts = site.tags.VirtualEvent | size %}
+{% assign numPosts = site.tags.virtualevent | size %}
 {% if numPosts == 0 %}
     <p>No posts have this tag...yet.</p>
 {% endif %}
 
-{{ numPosts }} posts with the tag VirtualEvent
+{{ numPosts }} posts with the tag virtualevent
 
-{% for post in site.tags.VirtualEvent %}
+{% for post in site.tags.virtualevent %}
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>

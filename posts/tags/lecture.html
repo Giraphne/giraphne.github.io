@@ -1,19 +1,19 @@
 ---
 layout: blog_page
 title: Blog
-subtitle: Lecture posts
+subtitle: lecture posts
 background: '/img/bg-journal.jpg'
 
 ---
 
-{% assign numPosts = site.tags.Lecture | size %}
+{% assign numPosts = site.tags.lecture | size %}
 {% if numPosts == 0 %}
     <p>No posts have this tag...yet.</p>
 {% endif %}
 
-{{ numPosts }} posts with the tag Lecture
+{{ numPosts }} posts with the tag lecture
 
-{% for post in site.tags.Lecture %}
+{% for post in site.tags.lecture %}
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
