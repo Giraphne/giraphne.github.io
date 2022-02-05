@@ -31,6 +31,9 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
+        {% for tag in page.tags %}
+        <a href="/posts/tags/{{tag}}" class="btn btn-outline-info btn-sm" role="button">{{ tag }}</a>
+        {% endfor %}
 
         {{ content }}
 
