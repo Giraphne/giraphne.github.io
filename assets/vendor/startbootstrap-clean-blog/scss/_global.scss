@@ -23,6 +23,10 @@ h6 {
   @include sans-serif-font;
 }
 
+h3 {
+  color: teal;
+}
+
 blockquote {
   font-style: italic;
   color: $gray-600;
