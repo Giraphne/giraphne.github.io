@@ -1,0 +1,112 @@
+---
+layout: post
+title: "ICER day 1"
+subtitle: "Monday August 8"
+date: 2022-8-8 08:28:00 +0100
+background: '/assets/img/2022/icer.jpeg'
+tags: [tripreport]
+---
+
+<p>The time was finally there, in-person ICER! Not as big as SIGMOD that I had just attended. Plus, I was much more familiar with research streams at ICER than at SIGMOD, so there was some good hope of actually networking (something I did not really get to do at SIGMOD).</p>
+
+<p>The conference was held at USI, which stands for Università della Svizzera Italiana and is located in Lugano, in the Italian speaking part of Switzerland. On campus, the Aula was reserved for us. Already, when walking into the room, I was impressed with the setup. You could immediately see that this was meant to be an interactive experience. The core idea of paper presentations at ICER is that there is a short period of discussion at roundtables before asking questions of the presenter. This helps to filter out many questions, and leads to better questions being asked within the room. Additionally, the room itself had the posters positioned to the side as well, such that everyone could take a quick look at them in an empty moment. </p>
+
+<p>To incorporate the virtual attendees more, there was one screen off to the side where remote attendees could put up their photos. For the break times, there were little seating corners such that virtual and in-person people could chat together. </p>
+
+<h2>Lightning talks and posters</h2>
+<p>The daily content started off with a set of lightning talks and posters. There were a couple that really caught my interest. The first of which was Jack Parkinson's work on the <a href="https://doi.org/10.1145/3501709.3544284" target="_blank">relationship between spatial skills and CS aptitude</a>. The idea is that being able to hold multiple concepts and representations in memory at the same time, is a reflection of spatial skills. He has been working on this area for a while, even going so far as creating a course where they train students in spatial skills to hopefully help them develop problem solving skills. </p>
+
+<p>Another interesting lightning talk and poster was presented by Abigail Evans, who works on creating <a href="https://doi.org/10.1145/3501709.3544277" target="_blank">a supportive IDE for recognizing and recovering from Programming Misconceptions</a>. She has been working on analyzing programming misconceptions and implementing help for these as an extension to Visual Studio. I unfortunately did not get the opportunity to talk to her during her poster session.</p>
+
+<p>Finally, a very interesting line of research was by Sarah Castle, on how computing could influence students <a href="https://doi.org/10.1145/3501709.3544274" target="_blank">mathematical creativity in Linear Algebra</a>. Now, you might think, isn't mathematics really boring? Do we need creativity? The answer is yes! Mathematics is pure problem solving, and problem solving requires creativity! I find her approach to research really creative, as I would never have thought of creativity coming from CS and applying it to mathematics.</p>
+
+
+<h2>Session #1 - Programming assignments</h2>
+<p>Next up was the first paper session, which consisted of three papers.</p>
+
+<h3>Miranda Parker - A Pair of ACES: An Analysis of Isomorphic Questions on an Elementary Computing Assessment</h3>
+<p>The first paper was by Miranda Parker and colleagues and can be found <a href="https://doi.org/10.1145/3501385.3543979" target="_blank">here</a>.
+They created a set of two tests, where some questions were identical, some questions were designed to be isomorphic, and some were plain different, and then they checked how the performance on the two tests was. 
+The isomorphic questions were designed to have the same item difficulty, and were only changed in relation to their incidentals (such as the names or themes). 
+For context, the test was for 4th graders, and as such the questions were of visual moving objects, for which the students needed to identify their corresponding codeblock in Scratch. So the incidentals that would change were for example that the moving object would be a turtle instead of a bunny, or a bee instead of a bird. </p>
+
+<p>With this study they were able to identify which elements of the questions were actually incidental, and which were perhaps radical (a radical element is something that changes the difficulty of the question). It seems then that turn direction is an incidental, but the location of the turn in the move is perhaps radical. This was very interesting to me, as I would assume that the number of steps before and after the turn is not so important. At our discussion table, we were wondering if this would also be the same for older students. Perhaps for them the location of the turn could be an incidental instead of a radical? Then, does that mean that what makes an incidental vs a radical changes with level of education?</p>
+
+<p>Another, more expected radical, was with horizontal and vertical radicals, where a reversed direction influenced the difficulty of the problem. The authors hypothesized that this was due to the natural language they were used to: the participants all were native English or Spanish speakers, reading left to right, top to bottom. </p>
+
+<p>I learnt so many new things from this method as well. Like with the creativity for mathematics, this method of work to get to these findings was not something I had ever thought of. Given that we know much about the general difficulties about writing SQL queries already, but not much about what is going on in our students heads, it might be nice to try an approach like this in the future to examine what question variations may be especially problematic.</p>
+
+
+<h3>Xinying Hou - Using Adaptive Parsons Problems to Scaffold Write-Code Problems.</h3>
+<p>The next paper was presented by Xinying, and can be found <a href="https://doi.org/10.1145/3501385.3543977" target="_blank">here</a>.</p>
+
+<p>They talked about how scaffolding is useful and necessary for students to learn. Scaffolding can be done through one-on-one tutoring, or through pair-programming. Alternatively, it can be done with programmatic tools as well, but this can be inconsistent and insufficient for novices. So, they wanted to try out if working through programs with help from Parsons problems could help.</p>
+
+<p>They ran a study where Parsons problems were given as support for students to write solutions to code composition problems, and asked the students why they used it. Some examples include that it can help understanding where to begin, get you going when you get stuck, and help correct errors. The authors also found that students used the Parsons problems differently than they might have expected. For example, some students used the code lines for inspirations, reading the code blocks. Some moved a couple of blocks around, likely until they had figured out a possible solution (but without finishing the drag and drop).</p>
+
+<p>Students also noted that they liked the scaffolding, for example because it helped them to refine their existing knowledge, and it prompted them to think more deeply. Unfortunately though, Parsons problems are not well suitable for facilitating multiple different solutions to any coding problem.</p>
+
+<p>In their study comparing performance with and without scaffolding through Parsons problems, they did not find a significant effect in performance. However, this could be due to all students already performing really well on the pretest. Students working with scaffolding did answer their questions more quickly, but it is an open question whether that is a positive.</p>
+
+
+<h3>Juho Leinonen - Automatic Generation of Programming Exercises and Explanations using LLM</h3>
+<p>The final paper in this session was presented by Juho Leinonen and can be found <a href="https://doi.org/10.1145/3501385.3543957" target="_blank">here</a>.</p>
+
+<p>The problem that Juho and co-authors posed is that all students have to answer the same questions and problems in the courses they take, regardless of their personal interests, or the concepts they struggle with. Then, personalization might play a role in helping them learn more. However, personalization is not feasible given the massive amount of work going into creating exercises.</p>
+
+<img src="/assets/img/2022/icer_juho.jpeg" width="100%" alt="Juho Leinonen presents his work at ICER, standing in front of a large screen displaying examples of autogenerated images.">
+<span class="caption text-muted">Juho did not only generate exercises with large language models, he also generated all the images for his presentation!</span>
+
+<p>Therefore, they questioned whether language models could help in creating code exercises. For this they used one-shot learning, which meant they set up a prompt of some keywords, an example question, sample solution, and test cases. They generated a huge amount of exercises, which then were tested for completeness, sensibility, readiness and some other metrics. All in all, the generated exercises seem reasonable, with okay sensibility, completness and test coverage. The faulty exercises could often be filtered out automatically with a script. Of course, it is not ready for direct implementation without filtering, but approximately 30% of the exercises would be ready to use. Furthermore, many of the faulty ones have only minor faults, which are much easier to quickly fix for an instructor, than it would be coming up with new exercises.</p>
+
+<p>At the DataEd workshop, we have also discussed the massive amount of time involved in creating exercises. For database courses, the added complexity comes from creating an interesting, but complex enough, database schema. It would be interesting to see if the CodeX model could also create database schemas and exercises that make sense!</p>
+
+<h2>Lightning talks and posters 2</h2>
+<p>The next session of papers and lightning talks contained another load of interesting works, such as that by Vivian van der Werf on <a href="https://doi.org/10.1145/3501709.3544288" target="_blank">if and how to teach variable naming practices</a>, and the work by Carl and Nathan Haynes-Magyar on <a href="https://www.codespec.org" target="_blank">Codespec</a>, an editor which allows students to practice with <a href="https://dl.acm.org/doi/10.1145/3501709.3544278" target="_blank">five types of practice problems</a>.</p>
+
+<p>Although I did not have a lightning talk, this session also contained the poster by Leonardo and me on <a href="">QuerySandbox</a>, a tool for novices to <a href="https://dl.acm.org/doi/10.1145/3501709.3544282" target="_blank">learn about SQL anti-patterns while writing queries</a>. I had some really nice interactions at the poster, with most people being most excited about it already being available online and ready for usage. There were also some nice suggestions for extensions, and questions about the design process Leonardo went through. Although there was only half an hour for each poster session, the posters stayed up all throughout the conference, so I did meet a few people at the poster in other sessions and breaks as well. It was really lovely that each poster was crowded for the full half an hour that the session took!</p>
+
+<img src="/assets/img/2022/icer_vivian.jpeg" width="100%" alt="Vivian van der Werf standing at the ICER stage.">
+<span class="caption text-muted">Vivian presents her lightning talk on variable naming.</span>
+
+<h2>Paper session #3 - Problem solving</h2>
+<p>By then it was already 16:30, and the day had been long, but there was one more paper session on the schedule, that on problem solving. It contained three papers, on aspects as widely varying as can be within one overarching topic.</p>
+
+
+<h3>Elijah Rivera - Plan Composition Using Higher-Order Functions</h3>
+<p>The first paper was by Elijah Rivera and colleagues and can be found <a href="https://doi.org/10.1145/3501385.3543965" target="_blank">here</a>.</p>
+
+<p>Consider the technicalities of a plan. There are certain things it must consist of: primitives, compositions, and representation. For a floor plan, we know that it is made by adding walls, windows and doors together, plus perhaps a roof. These ar the primitives. For composition, we know that there are some rules that most architects stick to: walls are flat, come together in corners, no random pieces of wall within a room, a room has a roof, etcetera. The representation is how we write this down, and if you have seen a few floor plans, you can probably read all others as well.</p>
+
+<p>For program planning, it is true that we need these same three components: primitives, compositions and representation. Elijah and his colleagues suggest that we can use Higher Order Functions (HOF, functions that take another function as an argument) as primitives for plan composition. The big question for this is how to do representation for HOFs without dedicating to one programming language. To be language-agnostic, they decided to go with block-based representations of an adapted version of <a href="https://snap.berkeley.edu" target="_blank">Snap<i>!</i></a></p>
+
+<p>Then they studied if students were able compose plans with HOF. For this they first checked if students could recognize HOFS, and problems that could be solved with (compositions of) HOFs. They find that their students were able to plan very well. Could they also transition from blocks to code? Yes! They did find a few minor misconceptions that were not surfaced in the plans but did end up in the code, but that seems easily remedied.</p>
+
+<p>At our table there were very positive reactions to this paper, although we were considering whether 'thinking in HOF' maybe introduces unnecessary complications? I personally have no clue about this, as this is super far from my personal research topic. It is amazing though that they found their students so proficient during the exercises.</p>
+
+
+<h3>Jamie Gorson - Using Electrodermal Activity Measurements to Understand Student Emotions While Programming</h3>
+<p>The second paper was by Jamie Gorson and colleages and can be found <a href="https://doi.org/10.1145/3501385.3543981" target="_blank">here</a>.</p>
+
+<p>Jamie started off by telling us what we all know: programming is an emotional activity. But the question is, why exactly? What makes it more emotional than other areas of problem solving? To figure this out, they decided to apply Electrodermal Activity (EDA) as a measurement during a programming activity. EDA can detect micro level changes to sweating, changes which are not possible to detect visually. </p>
+
+<p>The setup was that participants worked on a programming exercise for 30 minutes. Then there was a little break for the participant while Jamie did a very quick analysis of the data to identify timestamps of emotional change. Jamie and the participant would then discuss what happened at each timestamp. The participants were also made aware that the technique was not flawless, it may report something while nothing happened for the participant, which allowed them to also say that 'nothing happened'.</p>
+
+<p>So, what kind of emotions did they identify? They found negative emotions, for example if the student did not know something, got stuck, or changed their approach. They found positive emotions for progress, and that did not even mean getting closer to the answer, but only that the participant had written more code. Other examples for positive emotions were having a plan, and fixing an error. </p>
+
+<p>Overall, they identified 3 patterns of emotions within their participants behavior, of which they presented one: The cruise control pattern. In this pattern, the student works on planning in the first state, and when transferring to implementation becomes completely calm.</p>
+
+<p>I really loved this study on emotional reflection. I believe we are all aware of the negative emotion of frustration in our coding, but there are of course many more. Using a reflective interview that focuses on emotion and environmental factors over problem-solving is another new thing I have learnt today. Although the EDA hardware may not be 100% accurate, it is still a great tool to identify timestamps that may need further investigation.</p>
+
+<h3>Maria Kallia - When Rhetorical Logic Meets Programming: Collective Argumentative Reasoning in Problem-Solving in Programming</h3>
+<p>The final paper of the day was presented by Maria Kallia, and can be found <a href="https://doi.org/10.1145/3501385.3543975" target="_blank">here</a>. It was a lovely paper on the idea that programs are like arguments, they are chains of reasoning. </p>
+
+<p>Their study examined how groups of programmers of three different levels applied elements of Aristotle's rhetorical triangle: pathos, ethos and logos, while discussing together how to solve a programming problem. They found that all types of participants (novice to expert) created arguments, counter-arguments and integrations, but to different extents. </p>
+
+<p>A bigger focus on argumentation in education might improve the problem-solving skills of our students, as they will be able to construct a better chain of reasoning. This may in turn lead to better programs as well.</p>
+
+<p>And that was the end of day 1. Afterwards, I had some drinks and a lovely dinner with the group of people in the picture below. And then, quickly to bed for day 2!</p>
+
+<img src="/assets/img/2022/icer1.jpeg" width="100%" alt="A table at the restaurant with 9 ICER attendees sitting around it, looking at the camera.">
+<span class="caption text-muted">Lovely dinner at Aneme e Core. Image credits to Giulia Toti.</span>
+
