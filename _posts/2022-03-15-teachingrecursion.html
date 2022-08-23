@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Teaching Recursion in High School: A Constructive Approach"
+subtitle: "work by Dennis Komm"
+date: 2022-03-15 16:05:00 +0100
+background: '/img/papersummary.jpg'
+tags: [papersummary]
+---
+
+<h2></h2>
+
+<p>This paper is a not research paper, but a <i>Best Practice</i> paper from ISSEP 2021. The original can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-90228-5_6">here</a>. I read this paper because it was on the schedule to be discussed at the vakdidaktiekdag Informatica that I went to on the 15th of March.</p> 
+
+<h2>Summary</h2>
+<p>To describe it in short, the paper proposes a new method to teach recursion to grade 11 and 12 in 7 or more lessons. Counter to existing instruction approaches, the paper teaches divide-and-conquer as an approach <i>at the end</i>. Their work is incremental and gradual, meaning that the students learned small parts that they could use in practice after each lesson. As a result, they can practice with it on the computer. Their approach is inspired by PRIMM, which is a programming education technique that stands form Predict, Run, Investigate, Modify, Make. </p>
+
+<p>The author writes that there are five key points in their approach:</p>
+<ol>
+	<li>Introduce one concept after another in small steps.</li>
+	<li>Apply new concepts as soon as possible.</li>
+	<li>Use complete examples that can be executed as they are presented.</li>
+	<li>Consequently build on the students' preknowledge.</li>
+	<li>Build bridges to known concepts.</li>
+</ol>
+
+<p>After this introduction, the author introduces their road map. It consists of the following instruction steps:</p>
+<ol>
+	<li>Introduce recursion using an example.</li>
+	<li>Link recursion to something known.</li>
+	<li>Point out the importance of a base case.</li>
+	<li>Combine recursion with return values.</li>
+	<li>Allow multiple calls per function body.</li>
+	<li>Implement known algorithms recursively.</li>
+	<li>Introduce divide-and-conquer.</li>
+</ol>
+
+<p>They then present each of the steps of the lesson plan in detail, including background, motivation and code examples. I really liked this, as it was concrete and gave me more insight into tying all separate steps together.  Some examples of algorithms used to explain recursion include counting down, printing the Fibonacci sequence, drawing a spiral, and at the most complex level implementing MergeSort. This also helped refresh my code reading skills, haha.</p>
+
+<h2>Reflection</h2>
+<p>Although the paper was easy to read and clear overall, I felt like it fell a bit short. When reading the paper, I got the impression that the author had used this lesson plan to teach recursion himself. However, the paper did not contain evalation in any form. I would have liked to see for example some classroom observations (reflections on engagement perhaps), a comparison to the results of teaching recursion in the old way the year before, some interviews with students, or any other fitting evaluation mechanisms. I understand that there is no need for an actual study, this is not a research paper after all, but now I'm left wondering after the effects of teaching in this manner. Although I can evaluate that this process makes sense, if I were teaching basic computer science I would not want to overhaul my curriculum without knowing more. </p>
+
+<p>The author has made the decision to teach divide-and-conquer last. Existing instructional approaches for recursion often teach it first. I already discussed that the advantage of the new approach is that students can start coding immediately. However, I'm wondering if there are any other reasons to go for one or the other approach. The author does not mention any. Scaffolding is a well-known support mechanism in education, but I believe that both approaches can be scaffolded appropriately, whether they teach bottom-up or top-down. Problem decomposition and divide-and-conquer are essential to all computer science topics, not just to recursion. Perhaps when recursion is a means to achieve problem decomposition, the students do not care enough about the intermediate step -recursion- to be motivated until lesson 7. Approaching divide-and-conquer as a means to solve recursive problems might make more sense from a student perspective. I think that it is easier to understand the use cases for program decomposition than for recursion.</p>
+
+<p>I did like the physical programming approach, where the functions that introduced recursion concepts drew items in each step of the algorithm (such as the aforementioned spiral). As the author mentions, this provides a tangible notional machine for understanding the code.</p>
+
+
+<h2>Knowledge transfer to SQL</h2>
+
+<p>SQL also includes the concept of recursion for data retrieval. SQL recursion uses a Common Table Expression (CTE or WITH clause) and the UNION ALL keyword to gather all relevant data. Then, is the roadmap introduced in this paper applicable to teaching SQL recursion? </p>
+
+<p>Before we consider the SQL translation of this roadmap, it is important to consider the difference in the meaning of the word base-case between recursion in Python and recursion in SQL. In the examples introduced by the author, the base-case makes sure that the function terminates. The examples count down to zero, up to some boundary or until the length of an array is 0. SQL by default will keep running until the recursion finds and empty result table, after which it will union all intermediate tables and return them. It does not need a base case for that. Instead, the base-case in SQL recursion indicates the starting point for the query, typically some specific row in a table. This typically ensures that the query does not return the original table, but only a subset of it. As a result, the place of the base-case in the roadmap perhaps should be shifted to accomodate this difference. </p>
+
+<p>Now, let's see if we can translate all steps into a data retrieval context.</p>
+
+<ol>
+	<li><b>Introduce recursion using an example.</b> The author introduces this in the original paper with an example of counting down. This can be done in SQL too, but does not make much sense from a data retrieval point-of-view. A common example to introduce recursion in querying is to retrieve the transitive closure of relations such as parentOf, friendOf or managerOf. This is not as simple as the example in the paper, but could work.</li>
+	<li><b>Link recursion to something known.</b> In the paper, the author shows the drawing of an (infinite) spiral. We can continue with our previous example: suppose we have a database capturing a social network. Given the concept of <i>six degrees of Kevin Bacon</i>, we can illustrate that recursively querying the friendsOf relation would result in a result table containing the full database.</li>
+	<li><b>Point out the importance of a base case.</b> As I mentioned above, the base-case has a different functionality. Without a base-case, a recursive query would always return all rows of a corresponding table, because all rows are a starting point. In this sense, the base-case in SQL is like the parameter for a recursive function in Python. Its' importance then is to provide the scope of the answer, for example to retrieve the lineage of Alice or all (in)direct bosses of Bob.</li>
+	<li><b>Combine recursion with return values.</b> Because we consider data retrieval, we have worked with returning values right away, the alternatives of drawing or printing data do not work for query languages. </li>
+	<li><b>Allow multiple calls per function body.</b> One example of this is to find the lineage for both Alice and Bob, and to find the intersections of the two to find how they are related. </li>
+	<li><b>Implement known algorithms recursively.</b> This step is perhaps the one that is most difficult to transfer, as data retrieval is not easy to coincide with algorithms. In SQL, one slightly related example are recursive <i>triggers</i>, which are 'algorithms' to insert/update/delete data.</li>
+	<li><b>Introduce divide-and-conquer.</b> A recursive SQL query consists at minimum of a WITH clause, containing a UNION ALL command, and then there is a main query. So, we can teach the students to split their problem solving up in base case, recursion, combination and main retrieval.</li>
+</ol>
+
+<p>In summary, this approach could work for teaching recursive SQL. However, the hands-on, tangible pieces of code are much more transparent than any SQL code. Furthermore, as SQL queries are automatically divided into building blocks due to CTEs and subqueries, I'm not convinced that teaching divide-and-conquer last will work well.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
