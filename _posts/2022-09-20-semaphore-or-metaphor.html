@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Semaphore or Metaphor? Exploring Concurrent Students' Conceptions of and with Analogy"
+subtitle: "work by Brianna Bettin, Linda Ott and Julia Hiebel"
+date: 2022-09-20 15:00:00 +0200
+background: '/img/papersummary.jpg'
+tags: [papersummary]
+---
+
+<p>This is another paper I read in preparation for discussion on another vakdidactiekdag Informatica. The paper won a Best Paper award at ITiCSE 2022, and is available in the <a href="https://dl.acm.org/doi/10.1145/3502718.3524796" target="_blank">ACM digital library</a>.</p>
+
+<h2>Summary</h2>
+<p>The authors of this paper study how students leverage analogies to better understand concurrency concepts in an undergraduate course. First, the teachers introduce various concurrency problems with the use of analogies, such as reader-writer programs and the dining philosophers problem. Next, the students are assigned programming projects in which they design synchronization protocols, to measure whether they understood the introduced concepts. </p>
+
+<p>After the course, students could fill in a survey for extra credit. This survey asked them questions on how they worked on the programming projects, specifically with respect to analogies. Now, the authors acknowledge that introducing concepts by means of analogies will also prime the students to apply analogies, but they stress that their focus is on understanding <i>how</i> students use analogies over <i>whether</i> they do so.</p>
+
+<p>The results of the survey are interesting. Besides the analogies introduced by the teachers, the students also mixed analogies, comparing analogies from different projects and explanations, and coming up with many of their own analogies too. Some of the analogy domains include traffic lights, video games, restaurants, waterfalls and security cameras.</p>
+
+<p>On top of the widely varying domains of the analogies, students also seem to apply analogies for three different purposes:</p>
+<ul>
+	<li>to help visualize the problem space</li>
+	<li>to convey organization</li>
+	<li>and to reason about and contrast various aspects of the problem.</li>
+</ul>
+
+<p>The authors concluded that "<i>Responses leveraged analogy in a variety of ways, often describing not only the analogy but<b> how </b>it was used in problem solving</i>." They were surprised by the different ways that students were able to use analogies, and the variety of different analogies cooked up by their students. </p>
+
+<h2>Reflection</h2>
+<p>This seems to be a paper where the research was inspired by the experiences in the classroom. As the authors write, understanding concurrency requires a paradigm shift from what the students are thinking of when it comes to programming as a concept. This paper presents an interesting analysis of how students use the material to understand and learn the material, and how they build on that to create their own explanations.</p>
+
+<p>The survey method is convenient for incorporation within a course, and does not seem to require too much additional work on the side of the teachers or the students. The authors note that they did not record any demographic data, but that this would be interesting to explore in the future as differences "<i>across courses, universities and within respondents from a particular semester may have impacts that are not readily discernible within this data</i>". At first, I did not think this would be such a big deal given the qualitative nature of the data. However, reflecting a bit more on the subjects of the analogies, you can see that the self-defined analogies reflect the interests of the student. As such, it would be interesting to go beyond demographics and see how students' broader background (social and knowledge-wise) would influence what (type and domain of) analogies they use, and what they use them for. </p>
+
+<p>The results show a wide variety of domains and purpose of analogies. In the discussion section, the authors write that program 5 was the most difficult project within the course. For this project, they found that students regularly used analogies and descriptions to organize their code. As an example, instead of documenting exactly what the code did, one student commented their code with aspects of the analogy such as "<i>the reindeer wait to attach to the sleigh</i>". This behavior seems to almost abstract away from the code again, even though it is used by the student to structure and organize their code. It seems that the student finds it helpful to talk about what happens in the code on a higher level than expected. I'm wondering what this means for Explain-in-plain-English questions. In those, the student needs to give a natural language explanation for a piece of code. I think the aim is to have the student move beyond a line-by-line explanation, describing the big picture. Does an 'optimal' level of explanation exist?</p>
+
+<p>Finally, in the discussion, the authors mention how all the distinct analogies they identified are used for the same thing in the end: to build the requested synchronization protocols. My take-away from this is that students could benefit from teaching materials that utilize different contexts to explain the same thing. Tailoring to specific students would provides too much overhead (and the fact that many students were able to generate their own analogies, shows that that should not be necessary). However, especially taking into account that this study only covered a small set of backgrounds, it might be valuable to use different analogies within teaching, such that the course is attractive to students from all backgrounds. </p>
+
+<h2>Knowledge transfer to SQL</h2>
+
+<p>So, is it possible to transfer some of the knowledge of what we learnt from this paper to SQL? In the literature review, the authors cite Shene and Carr, who say that "<i>Shifting from sequential to multi-threaded programming is a paradigm shift which causes students significant problems</i>" [1]. This immediately reminded of the struggles that we see in our students, who need to shift from imperative languages to declarative. This definitely requires a paradigm shift from our students as well. </p>
+
+<p>Similar to the varying analogies leading to the same synchronization protocols, varying SQL queries can also lead our students to the same result table. On top of that, SQL's query optimizer is non-deterministic, so the same query may lead to different execution plans, which in turn lead to the same result table. It is very interesting to me that in this three-step-plan of query -> plan -> result, steps 1 and 2 can vary so much but still lead to the same step 3. I think this might be part of why SQL is so difficult for our students, you never really know what is going to happen...</p>
+
+<p>As for the application of analogies themselves, although we may be able to apply analogies to SQL's reserved keywords, a better fit would be to use them for explaining the execution of the query plan. Query plans are a specific type of concurrent program, in which data is retrieved, aggregated, filtered and combined. I'm not sure what a good analogy would be yet. It needs to allow for merging, union, deletion, threads and other concepts. If you have any good ideas, I'd love to hear of them!</p>
+
+
+<h3>References</h3>
+<ol>
+	<li>Ching-Kuang Shene and Steve Carr. 1998. The Design of a Multithreaded Programming Course and its Accompanying Software Tools. Journal of Computing in Small Colleges 14, 1 (1998), 12–24</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
