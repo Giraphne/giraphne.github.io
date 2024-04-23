@@ -1,0 +1,182 @@
+---
+layout: post
+title: "Koli Calling (in-person)"
+subtitle: "November 16 to 19"
+date: 2024-04-22 09:10:00 +0200
+background: '/assets/img/2023/koli-sights.jpeg'
+tags: [tripreport]
+---
+
+<p>This article contains my summary and inspiration from the in-person part of Koli Calling 2023. </p>
+
+<p>Koli Calling started on Monday and Tuesday with some very interesting presentations in its online section, as well as my own presentation of our work on <a href="https://dl.acm.org/doi/abs/10.1145/3631802.3631821">SQL misconception prevalence</a>. Afterward, all attendees who were coming to the in-person part had two days to travel to Finland. After a full day of travel on Thursday, I arrived in Joensuu to find the some other attendees and travel to Koli by bus. We ate a late dinner and then I went to bed to be ready for two days of in-person conference. </p>
+
+<h2>Opening</h2>
+<p>The chairs for this year, Ilkka and Andreas, opened this second part of the conference with a repetition of some statistics. Most notably, there were 48 in-person registrations for this year, making the conference (to me) feel like the research-equivalent of a family weekend.</p>
+
+<p>This year's Koli had a slightly different setup, with a moved timeline that did not intersect with SIGCSE. This led to a tighter timeline for the PC, but no major problems were reported. Additionally, there was the introduction of a clarification phase for papers, but apparently this was not used (or maybe not necessary) at all this year. </p>
+
+<p>The setup of the conference was such that research papers had been presented in the online part of the conference, to give more discussion-heavy parts of the conference enough space in the in-person part. Of course, discussion is facilitated by physical presence, so the program contained mostly discussion papers and posters. Discussion paper presentations had to end with discussion questions and that worked well.</p>
+
+<p>Below I discuss some of the research that was presented at Koli that resonated with me.</p>
+
+<h2>Session 1: New perspectives (discussion papers)</h2>
+
+<b>Mark Guzdial and August Evrard - Identifying the Computing Education Needs of Liberal Arts and Sciences Students</b>
+
+<p>The first paper was by Mark and Gus, who presented <a href="https://doi.org/10.1145/3631802.3631805">their work</a> to introduce computing for liberal arts and sciences students. The University of Michigan has a very large cohort of LAS students, such as humanities, social sciences and natural sciences. These students do not need a traditional computing education that focuses on preparing them for the computing industry. Instead, they need a less technology-heavy form that can prepare them for their careers as scientists or artists.</p>
+
+<p>In order to create an appropriate computing program for these students they started discussions within their college, talking to faculty in liberal arts and sciences as well as faculty in computing. They discussed what they do now, how they would use computing in practice, and what they want students to know. Multiple rounds of discussions, interviews and surveys led to the identification of themes that represent the computing education needs of these students: computing for discovery, computing for expression and computing for justice.</p>
+
+<p>The discussion was then continued in the room with the pointed question <i>Who should be defining computing education for everyone?</i></p>
+
+
+
+
+
+<b>Roger McDermott - Step Towards a Philosophy of Computing Education</b>
+
+<p>Another <i>new perspective</i> was presented by Roger. <a href="https://doi.org/10.1145/3631802.3631817">His message</a> was that we should be claiming the philosophy of computing education as a Computer Science Education research area. This involves defining a subject matter and methods, identifying how this field is different from the philosophy of STEM education. We can also define this philosophy as an intersection of the philosophy of computing, and the philosophy of education. But, what exactly is in this intersection? This subject was left open for discussion.</p>
+
+<p>An interesting point during the discussion is that we might need a journal to publish this type of work in. Carving out a space for a field is important. However, there is also a downside to creating such venues: any 'specialty box' has only a small reach and impact, as the community working exactly within such a box is small. It might be more valuable to the lifecycle of such research to publish it in larger venues. One problem with that solution is that some reviewers might think more philosophical work does not have a place in such a conference. The philosophical method is different from the methodologies that we are used to. Perhaps we need to educate our reviewers? There are some conferences in our field that are very open to more non-trational work, branching out and starting new research areas. Others, less so. </p>
+
+<p>This discussion really maps one-to-one to the experience I have had with our <a href="dataedinitiative.github.io">DataEd workshop</a>. Our approach of setting up a workshop at a large venue seems to balance both these drawbacks, as it allows for wide attendance, but we can also select our own reviewers who do believe data systems education is a conductive area of research.</p>
+
+
+<!-- <b>Felix and Carsten - Ontology of the digital</b>
+A wrong but right model.
+Suggestion: constructive knowledge
+How to build this ontology?
+1. find explicit genuinly digital features (change text properties after writing, conditional formatting, collaborative writing)
+2. Generalize (separation of content and presentation, evaluation of conditions, shared objects)
+3. Generalize (separation of content and properties)
+4. determine basic concepts -> cs concepts such as interactive processing and virtual objects
+
+-> But, not all traditional concepts are encapsulated in 4, why is that?
+-> Artifacts have politics, what are your thoughts on how this intersects with the ontology?
+-> But computer scientists are not politicians, so maybe it is better if we just stick with definitions.
+-> Why is algorithm not in there? Algorithms predate the digital! 
+ -->
+
+<h2>Session 2+3: Systems and Tools</h2>
+
+<b>Florian Wörister - <a href="https://doi.org/10.1145/3631802.3631825">A Block-Based Programming Environment for Teaching Low-Level Computing</a></b>
+
+<p>The next presentation was one that resonated with me, as it was about a language that is not commonly discussed in Computing Education venues: Assembly. One question that Florian often gets is: What is the relevance of low-level computing? Do we still need to teach this? Especially with the rise of AI in Education, I think many of us in the field are asked this question.</p>
+
+<p>Assembly is still important to learn for many of our students in computer science and engineering, as it allows to understand the heart of the machine. For example, assembly is useful to know when we are considering that 32 bit time is running out, or because it shows how the computer is actually working (for explainability purposes etc).</p>
+
+<p>The Blocksambler editor allows students to view a blockbased representation, as well as raw assembly code and a memory representation. I like how they allow different representations, from which students can choose their appropriate level through their use. Analysis of students' usage of the editor showed that students used the block as a means for expression, a record of previously expressed intentions, a source of ideas, and a resource used in meaning-making.</p>
+
+
+
+<b>Lassi Haaranen - Decades of Striving for Pedagogical and Technological Alignment</b>
+
+<p>Next up was another super interesting discussion paper that asked us to reflect on the way that we build systems. Systems can shape the way our student learn, and as a community we like to build systems through which we can support them (and ourselves). But every choice we make has (inexplicable) consequences. </p>
+
+<p>Lassi told us some of the stories associated with technological alignment. There is an issue of software decay, for example for our educational systems. Students may avoid learning new tools. The usage of systems creates a technical lock-in too, where migrating data is always a painful task. </p>
+
+<p>The question then is, what should we consider in order to build systems that are 'optimal'? This could be a wonderful thesis topic, but one idea is to take the industry perspective and subject ourselves to continuous development. Unfortunately, this is not always realistic as academics have other obligations as well. However, perhaps we can regularly have students work on updating or extending our tools such that we only have to do management work on it.</p>
+
+<b>Other works</b>
+
+<p>Yoshi Malaise discussed <a href="https://doi.org/10.1145/3631802.3631816">Explorotron</a> and its support for (un)guided code exploration in schools with limited resources. </p>
+
+<p>Zuzana Kubincová discussed their <a href="https://doi.org/10.1145/3631802.3631822">testing of a programmable robotics kit</a> for the Slovakian context where informatics is mandatory in schools from early ages, but there exist no detailed recommendations for utilizing educational robotics. </p>
+
+
+<h2>Doctoral Posters</h2>
+<p>The last item on the academc program were the posters by the doctoral consortium participants. They gave us a very short pitch before the session started so we immediately had some idea of who we wanted to talk to. I had some interesting discussions, for example with Dimitri Eckert who worked on misconceptions for data structures, and Florian Wörister for some further discussion on researching another language than your common first or second languages. An overview of all topics can be found <a href="https://dl.acm.org/doi/proceedings/10.1145/3631802?tocHeading=heading11">here</a>.</p>
+
+<p>I then took some time do decompress in my room, and afterwards went to Dr. Nick's Wine Tasting which was much fun. The dinner (as the one the day before and after) was fine, but not great for vegetarians. Good thing that the lunch is so extensive, no emergency food required!</p>
+
+<p>The second conference day was Saturday, and it was again kicked-off content-wise by Mark, who gave a keynote on Computing for Everyone. <p>
+
+
+<h2>Keynote by Mark Guzdial - Creating Computing Education for Everyone</h2>
+
+<p>The keynote had some themes that were recurring throughout Koli, such as who computing is for, and whether we still need to teach it. </p>
+
+<!-- Computing was meant to be taught to everyone.
+CP Snow, Peter Naur, Alan Perlis
+First definition of Computer Science, in Science in 1967, we might see this as def of Computing: "The study of computers and all the phenomena surrounding them"
+
+Do we (still) need to teach programming? Isn't the computer going to figure it out?
+-> Talking is maybe a bore for some, but others write poetry.
+-> Programming is a stong tool for teaching abstraction (but maybe we do not have the right language yet)
+-> There will always be friction between the want and the executes, and its on the human to fix this
+ -->
+
+<p>Mark then made the case for Alternative Endpoints: maybe our students will not become software engineers, what is the goal of computing education in this case? This might be <i>access to tools to express yourself</i> or <i>providing context to new developments in computing</i>, or something else. </p>
+
+<!-- The Case for Alternative Endpoints -> what are the goals of ced, if not jobs? -->
+
+<p>This also means adaptation of the field: to make computing education more accessible, we may need to change computing (see the paper with Gus from session 1). We may not have the right tools yet: machines changed a lot after the invention of the qwerty keyboard. Maybe the languages we have are not the best yet, because our 'keyboard' does not exist yet. </p>
+
+<p>Mark works with task-specific programming, where they use computing tools to teach topics in another domain, such as the physical properties of music. The explanation for this included a nice musical demo by Mark, who had actually brought instruments! Another example was worked out for justice, where students could learn to use a database and a template to generate a website specifically of use for them.</p>
+
+<p>All of this centers around making the notional machines of these liberal arts and sciences into a reality by means of computing. For most cases, it is far from clear yet how this should be done, and thus remains an open research question. Optimizing the cognitive load for such solutions is another open question. </p>
+
+<p>In short, computing education for everyone requires a vastly different approach than software development; all have different values, different programming experiences, and different paths. </p>
+
+
+
+<h2>Session 6: Beyond Programming</h2>
+<p>This section contained two papers that taught me genuinely new things, which I find genuinely entertaining. The first new concept was semantic profiling, and the second was the idea that we could represent dance as an algorithm. Very sensible, if you think about it a bit more...</p>
+
+<!-- <b>Johan Jeuring - What Skills Do You Need When Developing Software Using ChatGPT?</b>
+
+"the premature obituary of programming"
+Why is this premature:
+1. specifying a program is not easy (or maybe it is programming)
+2. new/updated machines that llms have not been trained on
+3. program rigidity: single mistake can mess everything up
+4. changes in the world need to be represented in the code but llms are not trained on that either.
+
+If LLMs can program, then the skills of the programmer should change, but what are the skills they need?
+Computational thinking is the core. Does CT score predict sofware development skills using llms?
+Study to write code using chatGPT. There is definitely a correlation between CT and development skills.
+
+So, people without any skills can still not write code, not even with chatGPT
+-> Maybe we are getting more efficient, so we need fewer programmers?
+-> How much of the problem solving skills can ChatGPT replace? ChatGPT was not able to find the correct algorithm to find the max sum path. 
+-> What is the validated test for computaional thinking? Find the reference in the paper.
+-> "Why Johnny can't prompt" paper, programming competencies.
+-> Connect to Maria's work on reading comprehension
+-> We should not confuse the contributions of CoPilot vs ChatGPT
+ -->
+
+
+<b>Jane Waite - Constructing feedback for computer science MCQ wrong answers using semantic profiling</b>
+
+<p><a href="https://doi.org/10.1145/3631802.3631803">This work</a> centered around the idea that when we select a wrong answer and later learn it was incorrect, this does not necessary help as we might remember our actual selection of the answer more than the correction. The reinforcement of selection behavior can be reduced by providing corrective feedback.</p>
+
+<p>After studying feedback literacy, they exlored the potential of semantic profiling for corrective feedback. The idea is to balance semantic density (the complexity of meaning - often more technical text) and semantic gravity (how closely meaning depends on context) throughout the feedback. The amount of semantic density versus semantic gravity throughout time describes the nature of a text.</p>
+
+<p>Their study showed that students prefered feedback in the form of either a semantic wave, or an up escalator. Both of these combine a specific call-out of the mistake, and end with a generalizable take-away message for other contexts. I will take the things I learnt from this paper into a project I'm currently working on, it was perfect timing to see this presentation at this time.</p>
+
+
+<b>Fiona Fairlie - Encouraging the Development of Computational Thinking Skills through Structured Dance Activities </b>
+
+<p><a href="https://doi.org/10.1145/3631802.3631811">This paper</a> is a wonderful illustration of how we can connect computational thinking to kids' current contexts. The idea is that early exposure to the fun of computing can make girls more likely to choose a CS degree later. In this case, Fiona is a dancer, as are many Scottish girls and women, and these skills map very well to algorithmic thinking.</p>
+
+<p>Fiona organised three dance workshops, each of which combined actual dancing with diagrammed representations of the dancing. The students (aged between 7 and 9) took a computational thinking test before and after. All students' performance improved after the workshops, and most of the students also found some enjoyment in the task (even the boys). </p>
+
+<p>Afterwards, we had an interesting discussion of which other areas we could apply this concept to. We figured that a strict notation is probably one of the core requirements, and some ideas of what could work are music, teamsports with predefined play situations, and history through battlefields.</p>
+
+
+<img class="img-fluid" src="/assets/img/2023/koli-group.jpg" alt="A selfie of Vivian, Fenia and myself on the Koli nature walk.">
+<span class="caption text-muted">Vivian, Fenia and I are enjoying the nature walk.</span>
+
+<h2>Sunday afternoon</h2>
+<p>We then had a nice lunch and the nature walk over the hills nearby. This was a wonderful walk through the snow, with some very good viewpoints, including some sunset colors around 3PM. Afterwards, there was a poster session where I spoke with Johan Snider about error quotients and with Viktoriya Olari about AI and Data Literacy for CS teachers. </p>
+
+
+<p>The program ended with a panel on the future of Koli. One of the topics was the potential to introduce other modalities such as round tables and coffee talks, as well as making the online part asynchronous. The ACM model switching to open access was another talking point. The organisers checked for that year's authors and found that only 40% of first authors' institutions already have an agreement with ACM, which means that potentially, 60% would be unable to come to future ACM conferences. An alternative is to share proceedings elsewhere, but this also has negative effects as it reduces reputation which is not great for PhDs nor tenure portfolios. Similar effects were also discussed with regards to acceptance rates, as some countries' universities require venues to have a maximum acceptance rate. </p>
+
+<p>I then had a really fun last night in Koli. The next morning was centered around breakfast, packing, checking out, and bus management. The bus left for Joensuu at 10AM, and all of us packed together was a really fun experience, in line with the whole conference feeling like a schooltrip.</p>
+
+<p>Koli Calling was a great experience, with wonderful opportunities to make valuable connections within the community. Many thanks to Andreas and Ilkka who organised all! See you next time?</p>
+
+
+
