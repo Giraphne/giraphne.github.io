@@ -1,0 +1,83 @@
+---
+layout: post
+title: "ITiCSE 2025"
+date: 2025-07-07 13:39:40 +0100
+background: '/assets/img/2025/iticse/iticse-logo.png'
+tags: [tripreport]
+---
+
+<h2></h2>
+
+<p>It's been a long time since I wrote my last contribution on this blog, but it is really time for another post. </p>
+
+<h2>Working groups</h2>
+
+<p>After a good experience with working groups last year, early this year I decided I wanted to propose another working group. There are so many unanswered questions for data systems education... Together with George Fletcher and Fenia Aivaloglou, I wrote a proposal to study notional machines for databases. The proposal got accepted, and the work was started. Unfortunately, George and Fenia had to drop out, but I was able to select new leaders from the member group we had gathered.</p>
+
+<img class="img-fluid" src="/assets/img/2025/iticse/group.jpeg" alt="The working group members pose with the ITiCSE 2025 logo.">
+<span class="caption text-muted">The lovely people in our working group. Left to right: Xiaoying Tu, Leonard Busuttil, Georgiana Haldeman, Giovanna Guerrini, Laura Farinetti, Raja Sooriamurthi, myself, Martin Goodfellow and Chandrika Satyavolu.</span>
+
+<p>Over the past months, we worked on exploring notional machines in data systems textbooks, as well as refreshing the literature on notional machines performed in 2020 by a working group of Fincher and colleagues <a href="https://dl.acm.org/doi/abs/10.1145/3437800.3439202" target="_blank">(report)</a>. Therefore, by the time we arrived in Nijmegen, we got to work mostly on data processing and analysis.</p>
+
+<p>Because of the requirements of 16 pages by Sunday night, we all worked hard throughout the weekend. We analysed commonalities within and between books, and made observations on the newer works in the area of notional machines. We also ended up with a 'library' of 212 notional machines for data systems. By sunday night, our report counted 22 pages, and we could look back satisfied.</p>
+
+<p>Of course, that is not the end of the working group story. In the coming months, we are continuing our work by extracting notional machines from our own course contents, and contrasting this with what we know from the textbooks. We'll also be cleaning and organising our notional machines even further, publishing them to the <a href="notionalmachines.github.io" target="_blank">NM repository</a> that was started in 2020 by that same working group.</p>
+
+
+<h2>Monday</h2>
+
+<p>After an exhausting (and hot) three days of work, I really had to take some rest, and so I skipped the opening and keynote. Fortunately, there were many more interesting things to learn today!</p>
+
+<p>Session 1B was on comprehension, one of my most prominent interest these days. The session started with a presentation by Viraj Kumar, who approached (LLM-generated) code and task comprehension <a href="https://dl.acm.org/doi/10.1145/3724363.3729100" target="_blank">from the standpoint of refute questions.</a> For such questions, students are presented with buggy code and asked to investigate that code to deduce an input to the sample that exposes the error in it. In this paper specifically, the researchers generate code and inputs, and test the students' 'reactive comprehension' as a scaffold for more proactive comprehension. I really like this idea, especially as an initial introduction to code comprehension. </p>
+
+<p>The work was followed by two presentations by David Smith IV on code comprehension. In the first presentation, he discussed how to <a href="https://dl.acm.org/doi/abs/10.1145/3724363.3729045" target="_blank">use LLMs to help give feedback on Explain in Plain English (EiPE) questions</a>. In EiPE questions, students are given a piece of code and are asked to explain it. Explanations can be line-by-line, or, if the student has more advanced skills, they can describe the meaning of the whole codeblock in one or a few sentences. It is a great method to test students' skills, but hard to implement at scale because it requires the teacher to analyse open text answers. In the paper, David and colleagues suggest to use LLMs to separate both the code and the explanation into segments, and then map them to eachother. The fewer segments there are in the explanation, the higher the level of understanding of the student. For example, contrast <i>it uses a for loop in, in each run it checks whether a value is bigger than zero, if so it adds it to x [...]</i> with <i>sums all positive numbers in the array</i>. The mapping of segments can be used to help students understand the shortcomings of their description, debug the code, and help them build higher level representations. Their <a href="https://pypi.org/project/eiplgrader/" target="_blank">system</a> thus provides another great scaffolding tool.</p>
+
+
+<p>This was followed by a presentation on a 'simplified' format of EiPE questions. The goal of the assessment in <a href="https://dl.acm.org/doi/10.1145/3724363.3729097" target="_blank">their paper</a> was to have the student come up with a suitable function name for a piece of code, to reflect their high-level understanding of the code. Then, the function name was used to prompt an LLM to generate the function body, and this code was checked against test cases. The simplification in this is teacher-facing. EiPE questions are very useful, but also complex to grade. This mechanism of function name generation, and the passing of test cases, allows teachers to grade EiPE in a quantitative way. I think this is super nifty, as it allows for testing code comprehension on a much larger skills than many other mechanisms allow. Another thing I learnt from this paper was there is a <a href="https://opus.lib.uts.edu.au/bitstream/10453/12626/1/2008001537.pdf" target="_blank">mapping from SOLO to EiPE type answers</a> by Tony Clear and colleagues, which I will be studying in detail.</p>
+
+
+<p>After this paper session, the two sessions for the Working Groups were held. There were many interesting groups again this year. Two that were closest to my own interests were the one <a href="https://dl.acm.org/doi/10.1145/3724389.3731284">developing a research knowledge activity for CSEd</a>  and the one on <a href="https://dl.acm.org/doi/10.1145/3724389.3731279" target="_blank">two-stage exams</a> (something I had not heard of before). Of course, we also presented the work of our working group.</p>
+
+<p>The day was concluded by a happy hour by Oracle, where I finally got to meet Bo English-Wiczling from Oracle, who was responsible for sponsoring DataEd at SIGMOD this year. Of course I was very thankful for that, and we had a little chat. Maybe there'll be more?</p>
+
+
+<h2>Tuesday</h2>
+
+<p>I started tuesday by attending session 4C on student use of GenAI. It's always useful to put some appropriate uses of GenAI in your toolbox, and so I aimed to learn more in preparation for my own courses. The first <a href="https://dl.acm.org/doi/10.1145/3724363.3729070" target="_blank">paper</a> that added to my toolbox was presented by Avid and Richard. It's subject was generating personalized programming assignments. Their methods and <a href="https://github.com/inda-xx/final2.0/" target="_blank">systems</a> seemed to work well. They generated task descriptions, solutions, template code, and tests, that were good but not always consistent in difficulty. But, they also presented some cautionary results, most notably that students felt a loss of community as they no longer worked toward the same goal and assignment. </p>
+
+<p>The <a href="https://dl.acm.org/doi/10.1145/3724363.3729089" target="_blank">second paper</a>  for my toolbox was presented by Sven and also discussed personalized programming assignments generated by LLMs. They wrote a prompt and then had students fill in a context domain and programming concept that they wanted to work on. The model then generated task description, solutions, template code and unit tests. Then, they checked these by means of expert evaluation (does it pass tests, is it solvable, does it capture the right concepts) and student evaluation (is the context relevant, is the description sensible, is there enough information to solve the problem). Overall, this system works well, but only for exercises that focus on a single concept. As such, it is not ready for more advanced use yet.</p>
+
+<p>And then came Stephen MacNeil, who added the concept of negative expertise to my toolbox. The idea of the <a href="https://dl.acm.org/doi/10.1145/3724363.3729067" target="_blank">paper</a> is to help students differentiate between good and bad code suggestions, by not just telling them what is the right thing to do, but also explaining what NOT to do. Therefore they set up a quiz format that presents three options for autocomplete functions such as Copilot. Their results show that it works, it encourages metacognitive planning, it creates awareness of misalignment between different plans, and it teaches about variations and unfamiliar terms. I really like this idea because it gives student more insights in what they do not know yet, and so it builds skills beyond programming. Unfortunately a link to the tool was not included, but should be available if we reach out to Stephen. </p>
+
+<p>After this paper session, I attended a short session with the silver conference sponsors, to see if they provided anything nice for the toolbox and it seems they do. Then, it was time for the excursion, which this year was to Nationaal Park de Hoge Veluwe. We first visited the Kröller-Muller museum and then I went to try a bit of cycling with fellow attendees. </p>
+
+
+<img class="img-fluid" src="/assets/img/2025/iticse/bikes.jpeg" alt="A picture of four people on or near bikes, with a grassy background. ">
+<span class="caption text-muted">A few of us on a short adventure in 35 degrees Celcius.</span>
+
+<p>After cycling and the bustrip home, we had some time to freshen up for the banquet. This was held in the Stevenskerk, and was absolutely wonderful. The location, the acoustics, the entertainment, the food... It all ended too soon, but that was definitely a banquet to never forget. </p>
+
+<h2>Wednesday</h2>
+
+<p>The wednesday morning started with another session on one of my favorite topics, computational thinking. My main take-away from this session came from the presentation by Shravani Agrawal, with a <a href="https://dl.acm.org/doi/10.1145/3724363.3729035" target="_blank">paper</a> on teaching kids about hypothesis testing. Some important points in the context of hypothesis testing are: varying one thing at a time, efficient exploration of solutions, confirmation bias, and the need for falsification. To teach these principles to kids, they developed a game with blocks of different sizes, shapes and colors. It involved a rule-setter (who came up with a rule) and a rule-guesser (who had to figure it out). The setter could come up with a rule that can be about the size, color, shape of the blocks, and then the guesser has to figure out the subset of blocks that conform to the rule. The main take-away then was that humans are not intuitively working on hypothesis falsification. Shravani illustrated this by showing the following series: 2, 4, 6, _, _, and asking us what should come next. The room suggested 8 and 10, and this was correct, but not the only solution (the rule was to have only increasing numbers).</p>
+
+
+
+<p>The final paper session of the day was on mastery learning. The papers were really complimentary to eachother, with the <a href="https://dl.acm.org/doi/10.1145/3724363.3729082" target="_blank">first</a> studying perceptions of mastery, the <a href="https://dl.acm.org/doi/10.1145/3724363.3729023" target="_blank">second</a> studying mastery learning through modules in practice, and the <a href="https://dl.acm.org/doi/10.1145/3724363.3729104" href="_blank">third</a> exploring how GenAI could support mastery learning courses. The final presentation also highlighted some of the challenges that come with mastery learning, for example that it doesn't fit university's temporal structure, and that students like flexibility but need high self-regulation to be successful. GenAI could potentially help with this by providing on-demand support and feedback, perform automatic content generation, and offer automated tutoring. </p>
+
+
+<p>The day was wrapped up with a keynote by Danny Beckers, a historian of informatics who gave an overview of programming education in the Netherlands. The closing revealed (to those who had not noticed yet) that ITiCSE 2026 will be in Madrid. I think I'll skip that event and target the -very exciting- 2027 destination!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
