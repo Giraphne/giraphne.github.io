@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Koli Calling 2025"
+subtitle: "Days 2 and 3"
+date: 2025-11-15 09:09:02 +0200
+background: '/assets/img/2025/koli/koli-view.jpeg'
+tags: [tripreport]
+---
+
+
+<h3>Keynote</h3>
+<p>Friday morning we started bright and early with a <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3769995">keynote</a> by R. Benjamin Shapiro, who discussed the future of computing education in terms of a coin with three sides (instead of the usual two). He suggests that, in terms of computing education (and specifically software engineering), the coin maps to programs and programming tools as the two traditional sides, with the human practice of software engineering as the rim of the coin. Ben then continued to discuss three views on computing education for the era of AI.</p> 
+
+<ol>
+	<li>The hypester, who believes that the future is vibe coding. The problem with this is that there is little evidence that that would make sense. Plus, as all programmers know, code specification is much harder than the coding itself. </li>
+	<li>The reactionary, who says that we should ban it, or, more flexibly, that students must learn to do things without AI before they do them with AI. The problem with this viewpoint is that it assumes static learning goals, and it is inauthentic to the real world.</li>
+	<li>The Porter-Zingaro view, who say that GenAI developmental tools are fundamental and we should help students to use them well. It provides the opportunity to teach deeper software engineering skills. Ben aligns with this perspective, but thinks they do not take it far enough.</li>
+</ol>
+
+<p>In terms of changes to the coin since the start of software engineering, we now have programs that contain AI, developer support in tools, and in terms of human practice we have prompt-based function definition. Programs are hybrid, containing data, models and prompts.</p>
+
+<p>So, what does this mean for our practice? If we want our education to be valuable to society, our classrooms should be change laboratories, where we support criticizing of existing activities and organisations, the envisioning of new patterns and models of activities, we commit to concrete actions and then actually follow through. This is embodied in Porter and Zingaro's book on programming education. To take it even further, we should take into account where we want all the sides of the coin to go and what changes that involves. </p>
+
+<p>Overall, according to Ben, that means interventions should be formative. For example, we know that GenAI can do the assignments that we give to our students. As a result, we are typically sceptical that learning is happening. So how do we help learning to still occur? We should write assessments in the form of <b>read, critique and improve assignments</b>, which prepare students better for the reality of software engineering. </p>
+
+<p>Unfortunately the existing tools for software engineering are adequate for the new types of programs, for example, stepping through the call stack of hybrid code does not really work. So, what should an IDE for this new era be able to do, to facilitate software engineering?</p>
+<ul>
+	<li>Help writing code: Suggest to import symbols that are of yet undefined. </li>
+	<li>Help writing tests: Indicate where tests are missing or incomplete, or suggest test templates and values that (knowing the context) would be valid. </li>
+	<li>Help with debugging: Visualize data when trying to debug, and suggest prioritization for code issues.</li>
+</ul>
+
+<h3>Other talks that I found interesting</h3>
+
+<p>In session 5 on teaching students with disabilities, Joshua demonstrated for us how using screen readers to passively read code is much, much harder than being able to read the code yourself. If you read actively, you can go back and forth and glance to parts to keep them in memory. But if you use a screen reader, you are dependent on the linear reading that the screen reader provides. Their statement is that <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3770018">approaching code as prose is the wrong approach</a>, as it leads to missing syntax and semantics. For example, prose requires only implicit punctuation whereas code requires explicit punctuation. Screen readers may also lead the reader to confuse values, as different spellings may be pronounced the same way. They suggest to build a screen reader that presents in a form derived from the AST. I'm really excited to hear about their follow-up works to learn more about how their ideas work out. </p>
+
+<p>On Saturday, in session 8, Seth Bernstein presented a systematic literature review on <a href="https://dl.acm.org/doi/10.1145/3769994.3770036">the harms and consequences</a> of GenAI in CS Education. Of the 1849 retrieved papers about GenAI in CS Education, only 224 papers explicitly discussed any type of harms (114 papers were excluded as they were about K-12 education). 
+They find that harms on cognition, metacognition, and assessment, are relatively well-described, whereas harms related to equity, social relationships, and logistics are much less touched upon. In terms of evidence for harms, most of the times these are only hypothesized or observed, not measured. The paper ends with a list of grand challenges for CS education, such as the democratization of education and the question of how to preserve our learning communities. 
+Overall, I found the numbers quite disappointing. Fortunately the one paper I published on LLMs in CS education was included for reporting harms, so at least we did something right. I hope this paper serves as an eye opener for members of our community. </p>
+
+<p>In session 9, Naaz Sibia presented a <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3769998">really nice work</a> on code comprehension through multiple representations. She drew a parallel with constructing IKEA furniture: in terms of instructions we do not receive just a single picture, but many representations from different perspectives. They propose a set of three representations with highlights for the current state in all three, to make it easier for students to interpret and connect the one to the other. Students were really excited about this opportunity, which allowed them to work with a representation that matched their thought process. The representations seemed to be especially helpful for non-native English speakers, which is a wonderful addition in terms of equity. One open challenge is that the students did not seem to build mental connections between the representations. Facilitating this coordination is an interesting future work. </p>
+
+<img class="img-fluid" src="/assets/img/2025/koli/naaz_sibia_slide.png" alt="A set of three representations of code. On the left-hand side is a code snipped. In the middle is a memory representation with a call stack. On the right-hand side is an abstract picture of the code.">
+<span class="caption text-muted">Slide courtesy of Naaz Sibia.</span>
+
+<p>In session 12, Marko Schmellenkamp described <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3770012">a think-aloud study</a> to identify (mis)conceptions in first-order logic. They had seventeen participants whom they asked to translate natural language into logic formulas. They modeled the translation as a four-step practice, going from the statement in context, to a mental representation of the statement, a mental representation of the formula, to the written formula. They found that some students skipped the whole process and went straight from statement in context to formula, applying some kind of pattern. We saw similar behavior in our misconceptions study a few years ago. The paper contains an interesting list of conceptions and errors, that I will return to. Finally, I think their recruitment method of showing the recruitment message in the assessment platform after students made mistakes is a very interesting approach!</p>
+
+<p>Of course, as every year, we also had a lovely hike after lunch on Saturday. It had snowed the night before, so everything looked very pretty. Unfortunately, there was also some ice under the snow, which led to lots of people slipping and sliding. Too bad you can't have it both ways: easy going and pretty pictures. Luckily some warm Glögi lightened up our spirits, thanks to Otto.</p>
+
+<img class="img-fluid" src="/assets/img/2025/koli/koli-hike.jpeg" alt="A view from Ukka-Koli in the direction of the lake, with some snowy pines in the foreground.">
+<span class="caption text-muted">Views from the hike.</span>
+
+
+<h3>More thought-provoking ideas:</h3>
+<ul>
+	<li>Robert Rovetti showed us <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3770011">ten years worth of data</a> on pathways through CS education, which indicate that the gender gap in Computer Science likely arises before university.</li>
+	<li>Isaac Alpizar-Chacon showed us data on students views of GenAI. From the <a target="_blank" href="https://dl.acm.org/doi/10.1145/3769994.3770008">study</a>, it seems that in terms of helpseeking, highschool students are likely to ask a friend or teacher, whereas in higher education students are more likely to rely on GenAI. Furthermore, GenAI does not seem to influence students decisions (not) to study CS. </li>
+	<li>Henry Hickman discussed whether we are able to accurately determine whether (correct) code is effective or ineffective. To this end, the authors of <a href="https://dl.acm.org/doi/10.1145/3769994.3770010">the paper</a> manually rated 2200 distinct algorithms as effective or ineffective. They found that most students' answers were rated effective, but that making this judgement was hard to automate. Overall, it seems that judging effectiveness is mostly an intuition that we all have a hard time making sense of, leaving us with the question of whether we should even care about this... </li>
+	<li>Katerina Tsarava presented <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3769994.3770040">work by Katrin Kunz</a> on primary school children's misconceptions across different programming modalities. For their older cohort, they compared code tracing across Scratch, block-based Python and textual Python. They identified modality-specific patterns of misconceptions, which might mean that misconceptions are not as static as we might think!</li>
+	<li>My DC mentee Elena Spörer presented a <a href="https://dl.acm.org/doi/10.1145/3769994.3770005">systematic literature review</a> on debugging research. Interestingly, the majority of papers on this topic came out in the past five years. Elena identified some papers that work on collaborative debugging (although most studies focused on individuals), that could be interesting for the team I work with on collaborative data interpretation. Her ideas on multi-modal debugging analysis are also interesting, and something I will consider as a method going forward.</li>
+</ul>
+
+<p>Other adventures at Koli this year include: being a session chair for the first time, singing at the top of your lungs at the restaurant piano, climbing a rock in the middle of the night to try to see the aurora, trying to break the Koli Codenames record for most cards guessed in one turn, hunting rainbow-colored moose, and missing your bus thus missing your train thus missing your flight (not me!)</p>
+
+<p>Overall, this Koli was once again a wonderful experience. I really enjoyed myself thoroughly, especially as I made sure to participate more in the evening programmes. I'm exhausted but that can be fixed on the train and plane ride back home. Hopefully, next year we will have slightly longer breaks as the program was absolutely packed. But I appreciate how Juho and Rodrigo managed to keep the acceptance rate reasonable as well as stuffing all that program into 2.5 days. Many thanks to all organisers and volunteers for their service to the community! Hopefully we'll see eachother again next year. </p>
+
+
+<img class="img-fluid" src="/assets/img/2025/koli/queue.jpg" alt="The stairs up to Ukka-Koli, with a long queue of Koli attendees on it.">
+<span class="caption text-muted">Bonus photo: what happens when 50+ attendees try to crest Ukka-Koli at the same time. Photo courtesy of Sadia Sharmin.</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
