@@ -1,0 +1,88 @@
+---
+layout: post
+title: "Highlights from ICER"
+subtitle: "Days 0 and 1"
+date: 2026-08-12 17:47:00 +0200
+background: '/assets/img/2026/icer/angstrom.jpeg'
+tags: [tripreport]
+---
+
+<p>I was very excited to have ICER back in Europe, of course I had to go. It's great to meet back up with so many people I'd met before (many of whom, like me, won't be going next year). This holds specifically for the Americans, as not too many of them take the trip to Koli in November.</p>
+
+<p>This post represents my highlights from day 0 and 1, which doesn't mean there weren't any other cool things. It's just not very productive for me to write a minute-by-minute summary. If your work is not in here, it does not mean it was not interesting :).</p>
+
+<img class="img-fluid" src="/assets/img/2026/icer/sign.jpeg" alt="A board with a sign on it indicating the room numbers for the work in progress workshop and the doctoral consortium.">
+<span class="caption text-muted">Where do we go? These room numbers are confusing.</span>
+
+<h2>Day 0 - Work in Progress workshop</h2>
+<p>Much of the work for this workshop was done in the month leading up to August 11. For the work in progress workshop, the seven accepted participants all wrote a white paper on their topic. We had a first round of async feedback, which some of us turned into an updated white paper. Then, our meeting was to discuss this and any new feedback.</p>
+
+<p>My own Work in Progress is a grant proposal I'm writing on SQL error messages. Although none of the other attendees are working on data systems education (naturally), I received really helpful feedback on framing the work. They also helped me realize that I can tie in much more of my existing work than I thought made sense. All the better, as it makes me even more uniquely qualified to execute this research. </p>
+
+<p>The other works presented at the workshop were also really interesting conceptually. I won't say anything more about them here, but other participants' framing of their problems, and the feedback we were able to give one another, also really helped me get a better grasp on what I wanted/needed to do.</p>
+
+<p>The day ended with the welcome reception for the main conference, which was in a place with a great view (although it was quite warm). We got a nice peek at the castle, which is where the banquet will be. I'm very curious to see what that will be like!</p>
+
+
+<h2>Day 1 - Main conference</h2>
+
+<h3>How (and How Not) Do Code Complexity Measures Predict Cognitive Load?</h3>
+<b>Sverrir Thorgeirsson and Jan Vahrenhold</b>
+
+<p><a href="https://doi.org/10.1145/3765964.3811665" target="_blank">paper</a></p>
+
+<p>Session two contained one of the papers I had highlighted in the schedule, and of course it lived up to its expectations. In the presentation, Jan discussed how they performed a sort of replication of an ICSE paper that found a correlation between cognitive load and the data-flow complexity metric DepDegree, with the use of fMRI.</p>
+
+<p>Unfortunately, fMRI does not fit most CS departments' budgets, so the authors decided to instead measure self-reported cognitive load for students assessing different code snippets. The cool thing was that the students could choose their preferred programming language, so that would remove at least one potential factor of perceived complexity. </p>
+
+<p>Their analysis, fitting linear models to the numbers, did not reveal DepDegree as the strongest predictor as cognitive load. Rather, lines of code was the dominant factor, both for static and dynamic analyses. Besides this, they found that expert ranking of the snippets (based on pair-wise comparison) was also a good predictor. As a result, they will be working on a follow-up study on how the experts judge the complexity for these comparisons. </p>
+
+<p>I really liked this work for its reinterpretation of the methodology used in the original paper. A couple of years ago I worked on a similar pair-wise comparison study for SQL constructs. Perhaps, with guidance from this work, I should pick that data collection back up and write up the results. </p>
+
+<img class="img-fluid" src="/assets/img/2026/icer/jan.jpeg" alt="Jan Vahrenhold presenting their work next to a large projector screen. On the slide is a description of the process of sampling code snippets for the study, as well as a list of names for the experts who contributed.">
+<span class="caption text-muted">Jan presenting the work on code comprehension.</span>
+
+
+<h3>A Validated Scale Measuring Student Self-Efficacy for Programming with Generative AI</h3>
+<b>James Prather and many other authors (sorry authors, link to the full list below).</b>
+
+<p><a href="https://doi.org/10.1145/3765964.3811645" target="_blank">paper</a></p>
+
+<p>James presented a validated self-efficacy scale for programming with AI. After starting with a long list of known skills for programming, they moved through a version of 11 questions to a final instrument of only 5 questions. The fact that he got 80 of the attendees to take the instrument during the session highlights how easy it is to give this to your students throughout a semester. </p>
+
+<p>The interesting thing is that the score on the instrument does not really connect to performance in the course at all. Potentially, students overestimate their skills? In the discussion at our table, we were wondering if the instrument would work better for more advanced programmers -like the ICER attendees-, as they have a better understanding of what they do (not) know. </p>
+
+
+
+<h3>Steering AI Tutors Through System Prompts: A Crossover Study on Self-Regulated Learning and Cognitive Engagement Scaffolds in CS1</h3>
+<b>Maximilian Barth, Sverrir Thorgeirsson, Khashayar Etemadi, Juho Leinonen, Carlos Cotrini, and Zhendong Su</b>
+<p><a href="https://doi.org/10.1145/3765964.3811656" target="_blank">paper</a></p>
+
+<p>In session three, there was this paper that went beyond guardrails into learning theory in LLMs. The idea was to provide guidance to the students in a theory-backed manner. The autors introduced three versions of their <a href="ente.study" target="_blank">tutor</a>: a baseline which would just guide without giving the answer, a version applying Zimmerman's cyclical self-regulated learning framework, and the ICAP cognitive engagement framework. </p>
+
+<p>The authors then analyzed the code submissions, duration of the interaction, and also held some surveys. 1500 students from CS1 at ETH participated in the study. Interestingly, they found no statistically significant differences in student performance between the three tutor types. The qualitative analysis did show that students had longer and more constructive interactions with both theory-backed tutors. However, they also found that some students got annoyed with the process and just wanted to solve the exercise. As such, it may be unclear to what extent longer interactions are always more productive. </p>
+
+
+
+<h2>Poster session</h2>
+<p>Throughout the day multiple people told me there was a DC student with work on SQL that I should talk to, so of course I went. The <a href="https://doi.org/10.1145/3765965.3816685" target="_blank">work</a> by Setu Maheshwari is to support database testing education. He (re)designed educational material in the shape of videos, integrated reflection questions and formative assessment. We also discussed SQL education in general. It's exciting to have more people work in this area.  </p>
+
+
+<h3>Revisiting the Replication Study Design Used in Computing Education Research</h3>
+<b>Rita Garcia, Ellie Lovelette, Xi Wu, and Angela Zavaleta Bernuy</b>
+
+<p><a href="https://doi.org/10.1145/3765964.3811649" target="_blank">paper</a></p>
+
+<p>In this replication study on replication studies, the authors revisited to what extent our community partakes in replication studies. They executed a systematic literature review as well as a questionnaire on researcher perspectives on replication.</p>  
+
+<p>Their SLR found that a similar percentage of papers (2.5-ish) in our top five venues are replication studies. More replication studies were published in journals, but less in conferences, sort of balancing out to a same number as before. Interestingly, the search query of the original paper was only "replicat[a-z]*", which might significantly alter the result compared to the actual number of replication studies that are done (but not retrieved). The authors extended the analysis in an ITiCSE WG performed this year. Results TBD! </p>
+
+<p>The outcome of the questionnaire shows that we all seem to perceive replications as valuable. However, there might be issues in getting such papers published or getting recognition for it. Barbara Ericson mentioned in the discussion at our table that if most of the research work in our community is done by PhD students, and dissertations must be novel work, how can we expect there to be many replication works?</p>
+
+<p>Another interesting discussion point from another table was: what is a good percentage of works to be replication works? This is another ongoing discussion, but right now it seems we are in a 'replication void' rather than a 'replication crisis', so let's try to get the numbers up before we have this discussion on what is sufficient. </p>
+
+<p>And now I'm off to dinner and networking, and who knows, maybe a replication work or two are in the pipeline!</p>
+
+
+
+
