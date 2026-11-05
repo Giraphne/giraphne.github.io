@@ -1,12 +1,14 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "global.scss";
-@import "navbar.scss";
-@import "masthead.scss";
-@import "post.scss";
-@import "contact.scss";
-@import "footer.scss";
-@import "bootstrap-overrides.scss";
+@use "variables" as *;
+@use "mixins" as *;
+@use "variables";
+@use "mixins";
+@use "global";
+@use "navbar";
+@use "masthead";
+@use "post";
+@use "contact";
+@use "footer";
+@use "bootstrap-overrides";
 
 ul {
   list-style-type: disc;
